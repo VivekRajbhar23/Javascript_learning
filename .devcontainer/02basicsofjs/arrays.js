@@ -39,17 +39,57 @@ const arr = new Array(10,20,30,40,50);
 //splice will also give you all the elements which comes in the range that you have passed in parameter but
 // it will manipulate the whole array it will take out the array elements.
 
-console.log("A ",arr);
+// console.log("A ",arr);
 
-const myn1 = arr.slice(1, 3);
+// const myn1 = arr.slice(1, 3);
 
-console.log(myn1);
-console.log("B ", arr);
+// console.log(myn1);
+// console.log("B ", arr);
 
 
-const myn2 = arr.splice(1, 3);
-console.log("C ",arr);
-console.log(myn2);
+// const myn2 = arr.splice(1, 3);
+// console.log("C ",arr);
+// console.log(myn2);
+
+
+const marvel_heros = ["Thor", "Ironman", "Spiderman"];
+
+const dc_heros = ["Superman", "Flash", "Batman"];
+
+//this will push the first array into the second array.
+//marvel_heros.push(dc_heros);
+
+//console.log(marvel_heros);
+
+//[...] is a spread operator that sipmly seperate all the elements of array
+const allHeros = [...marvel_heros, ...dc_heros];
+
+//console.log(allHeros);
+
+// const newArr = [1,2,3,[4,5,6],7,[6,7,[4,5]]];
+
+// console.log(newArr);
+
+// const newArr1 = newArr.flat(Infinity);
+// console.log(newArr1);
+
+
+console.log(Array.isArray("Vivek")); //it will check that it is an array or not
+
+console.log(Array.from("Vivek")); // this will convert an array into string.
+
+console.log(Array.from({name: "vivek"}));
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1, score2, score3)); // it will convert variables into array.
+
+
+
+
+
 
 
 
